@@ -1,4 +1,4 @@
-const rootURL = 'http://codeial.codingninjas.com:8000/api/v2';
+const rootURL = 'https://codeial.codingninjas.com:8000/api/v2';
 export const APIUrls = {
     loginURL: () => `${rootURL}/users/login`,
     signupURL : () => `${rootURL}/users/signup`,
