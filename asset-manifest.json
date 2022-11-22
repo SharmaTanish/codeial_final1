@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/codeial/static/css/main.9d832581.chunk.css",
+    "main.js": "/codeial/static/js/main.0b5ff2ea.chunk.js",
+    "main.js.map": "/codeial/static/js/main.0b5ff2ea.chunk.js.map",
+    "runtime-main.js": "/codeial/static/js/runtime-main.3f5550fc.js",
+    "runtime-main.js.map": "/codeial/static/js/runtime-main.3f5550fc.js.map",
+    "static/js/2.668e09ac.chunk.js": "/codeial/static/js/2.668e09ac.chunk.js",
+    "static/js/2.668e09ac.chunk.js.map": "/codeial/static/js/2.668e09ac.chunk.js.map",
+    "index.html": "/codeial/index.html",
+    "static/css/main.9d832581.chunk.css.map": "/codeial/static/css/main.9d832581.chunk.css.map",
+    "static/js/2.668e09ac.chunk.js.LICENSE.txt": "/codeial/static/js/2.668e09ac.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3f5550fc.js",
+    "static/js/2.668e09ac.chunk.js",
+    "static/css/main.9d832581.chunk.css",
+    "static/js/main.0b5ff2ea.chunk.js"
+  ]
+}
