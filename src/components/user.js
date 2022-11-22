@@ -71,29 +71,53 @@ class User extends React.Component {
 
         const options = {
             method:'POST',
+            // mode:"no-cors",
             headers:{
                 'Content-Type':'application/x-www-form-urlencoded',
                 Authorization:`Bearer ${getAuthTokenFromLocalStorage()}`,
             }
         }
 
-        const responce = await fetch(url,options); // await WILL WAIT FOR THE FETCH TO COMPLETE
-        const data = await responce.json();
+        fetch(url,options)
+        .then( (responce) =>{responce.json()})
+        .then((data) =>{
+            if(data.success){
+                this.setState({
+                    success:true,
+                    successMessage:"Added Friend Successfully!"
+            
+                })
+                this.props.dispatch(addFriend(data.data.friendship));
+            }
+            else{
+                this.setState({
+                    success:null,
+                    error:data.message,
+                })
+            }
+        }
+        )
+        .catch(
+            (error) =>{ console.log(error);}
+        ); // await WILL WAIT FOR THE FETCH TO COMPLETE
+       
+       
+        // const data = await responce.json();
 
-        if(data.success){
-            this.setState({
-                success:true,
-                successMessage:"Added Friend Successfully!"
+        // if(data.success){
+        //     this.setState({
+        //         success:true,
+        //         successMessage:"Added Friend Successfully!"
         
-            })
-            this.props.dispatch(addFriend(data.data.friendship));
-        }
-        else{
-            this.setState({
-                success:null,
-                error:data.message,
-            })
-        }
+        //     })
+        //     this.props.dispatch(addFriend(data.data.friendship));
+        // }
+        // else{
+        //     this.setState({
+        //         success:null,
+        //         error:data.message,
+        //     })
+        // }
 
 
 
