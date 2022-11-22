@@ -75,7 +75,7 @@ class App extends React.Component{
 
 
       <Switch>
-        <Route path="/codeial" exact render={(props) => {  // USE THIS WHEN TO USE LOGIC IN ROUTING
+        <Route path="/" exact render={(props) => {  // USE THIS WHEN TO USE LOGIC IN ROUTING
           return <Home {...props} posts = {this.props.posts} friends={this.props.friends}  isLoggedin={this.props.auth.isLoggedin} />
         }} />
         <Route path="/login"  component={Login} />
