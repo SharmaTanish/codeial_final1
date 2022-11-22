@@ -39,7 +39,7 @@ class Login extends React.Component {
    
     render() { 
         const {error,inProgress,isLoggedin} = this.props.auth;
-        const {from}  = this.props.location.state || { from : {pathname: '/codeial'}} // i.e. IF PROPS.LOCATION.STATE IS NULL THEN REDIRECT TO HOME ONLY!!
+        const {from}  = this.props.location.state || { from : {pathname: '/'}} // i.e. IF PROPS.LOCATION.STATE IS NULL THEN REDIRECT TO HOME ONLY!!
         if(isLoggedin){
             // this.props.auth.isLoggedin=true;
             return <Redirect to={from} />

@@ -53,7 +53,7 @@ class Signup extends React.Component {
     render() { 
         const {error,inProgress,isLoggedin} = this.props.auth;
         if(isLoggedin){
-            return <Redirect to="/codeial" />
+            return <Redirect to="/" />
         }
         return ( <div>
             <form className="login-form">
