@@ -79,7 +79,7 @@ class User extends React.Component {
         }
 
         fetch(url,options)
-        .then( (responce) =>{responce.json()})
+        .then( (responce) =>responce.json())
         .then((data) =>{
             if(data.success){
                 this.setState({
